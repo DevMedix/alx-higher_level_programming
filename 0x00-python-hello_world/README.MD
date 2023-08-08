@@ -1,1 +1,1 @@
-Hello, World project using Python
+This contains project tasks for  Python - Hello, World
