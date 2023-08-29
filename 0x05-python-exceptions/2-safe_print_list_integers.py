@@ -9,7 +9,7 @@ def safe_print_list_integers(my_list=[], x=0):
         for item in my_list[:x]:
             if isinstance(item, int):
                 if x <= length:
-                    print(item, end='')
+                    print("{:d}".format(item), end='')
                     count += 1
                 elif x > length:
                     raise IndexError("list index out of range")
