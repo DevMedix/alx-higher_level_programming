@@ -126,4 +126,4 @@ class Square:
             for item in range(self.__size):
                 result += " " * int(self.__position[0]) \
                     + "#" * self.__size + "\n"
-        return result
+        return result.rstrip("\n")
