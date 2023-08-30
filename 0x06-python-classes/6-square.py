@@ -20,8 +20,8 @@ class Square:
             position (tuple, optional): The position of the\
             top-left corner (default is (0, 0)).
         """
-        self.__size = size
-        self.__position = position
+        self.size = size
+        self.position = position
 
     @property
     def size(self):
@@ -99,27 +99,21 @@ class Square:
         corner is positioned according to the 'position'
         attribute. If size is 0, an empty line is printed.
         """
-        try:
-            if self.__size == 0:
+        if self.__size == 0:
+            print()
+        else:
+            for i in range(self.__position[1]):
                 print()
-            else:
-                for i in range(self.__position[1]):
-                    print()
-                for item in range(self.__size):
-                    print(" " * self.__position[0] + "#" * self.__size)
-        except TypeError:
-            print("position must be a tuple of 2 positive integers")
+            for item in range(self.__size):
+                print(" " * self.__position[0] + "#" * self.__size)
 
-        try:
-            if self.__size == 0:
-                return ""
-            else:
-                result = ""
-                for i in range(self.__position[1]):
-                    result += "\n"
-                for item in range(self.__size):
-                    result += " " * int(self.__position[0]) \
-                        + "#" * self.__size + "\n"
-            return result
-        except TypeError:
-            print("position must be a tuple of 2 positive integers")
+        if self.__size == 0:
+            return ""
+        else:
+            result = ""
+            for i in range(self.__position[1]):
+                result += "\n"
+            for item in range(self.__size):
+                result += " " * int(self.__position[0]) \
+                    + "#" * self.__size + "\n"
+        return result
