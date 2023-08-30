@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """a class Square that defines a square(object)"""
 
+
 class Square:
     """
     A class representing a square.
@@ -10,7 +11,6 @@ class Square:
         position (tuple): The position of the square's\
         top-left corner as (x, y) coordinates.
     """
-
     def __init__(self, size=0, position=(0, 0)):
         """
         Initialize a square with a given size and position.
