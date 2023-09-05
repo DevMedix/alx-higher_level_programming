@@ -122,4 +122,4 @@ class Rectangle:
         Returns:
             str: A string representation of the rectangle.
         """
-        return f"Rectangle({self.__width},{self.__height})"
+        return f"Rectangle({self.__width}, {self.__height})"
