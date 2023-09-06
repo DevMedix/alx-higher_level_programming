@@ -1,14 +1,12 @@
 #!/usr/bin/python3
-"""This module contains one function that add integers"""
+"""This module contains one function that add integers
+"""
 
 
 def add_integer(a, b=98):
-    """This functions add two integers (a) and (b)
-    Args:
-        a (int): The first integer of the addition
-        b (int): The second integer of the addition
-    Returns:
-        int: The addition of a and b"""
+    """
+    This functions add two integers (a) and (b)
+    """
     if isinstance(a, float) or isinstance(b, float):
         return int(a) + int(b)
 
