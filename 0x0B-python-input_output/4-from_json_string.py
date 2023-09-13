@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-import json
 
 """This module contains a function to read text files"""
+import json
 
 
 def from_json_string(my_str):
