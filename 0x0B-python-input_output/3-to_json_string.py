@@ -10,4 +10,5 @@ def to_json_string(my_obj):
     Args:
         my_obj (str): object string
     """
-    return json.dumps(my_obj)
+    data = json.dumps(my_obj)
+    return data
