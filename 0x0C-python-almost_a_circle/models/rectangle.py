@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """This module has Rectangle class only"""
-from base import Base
+from models.base import Base
 
 
 class Rectangle(Base):
@@ -211,5 +211,4 @@ class Rectangle(Base):
             'width': self.__width,
             'height': self.__height,
             'x': self.__x,
-            'y': self.__y
-        }
+            'y': self.__y}
