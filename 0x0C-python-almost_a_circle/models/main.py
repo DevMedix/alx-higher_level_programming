@@ -1,13 +1,20 @@
 #!/usr/bin/python3
-""" 17-main """
-from rectangle import Rectangle
+""" 0-main """
+from base import Base
 
 if __name__ == "__main__":
 
-    r1 = Rectangle(3, 5, 1)
-    r1_dictionary = r1.to_dictionary()
-    r2 = Rectangle.create(**r1_dictionary)
-    print(r1)
-    print(r2)
-    print(r1 is r2)
-    print(r1 == r2)
+    b1 = Base()
+    print(b1.id)
+
+    b2 = Base()
+    print(b2.id)
+
+    b3 = Base()
+    print(b3.id)
+
+    b4 = Base(12)
+    print(b4.id)
+
+    b5 = Base()
+    print(b5.id)

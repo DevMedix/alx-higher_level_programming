@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """This module has Base class only"""
+
 import json
 
 
