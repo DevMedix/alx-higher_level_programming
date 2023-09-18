@@ -1,6 +1,8 @@
 #!/usr/bin/python3
-"""This module has Base class only"""
-
+"""This module has Base class only
+   If 'id' is not provided, it assigns a unique
+   identifier to the instance based on the number of objects
+"""
 import json
 
 
@@ -10,14 +12,6 @@ class Base:
     def __init__(self, id=None):
         """
         Initializes a Base instance with an optional 'id' parameter.
-
-        If 'id' is not provided, it assigns a unique
-        identifier to the instance based on the number of objects
-        created so far.
-
-        Args:
-            id (int, optional): An optional identifier for the instance.
-
         """
         if id is None:
             Base.__nb_objects += 1
