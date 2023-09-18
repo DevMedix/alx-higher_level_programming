@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """This module has Square class only"""
-from rectangle import Rectangle
+from models.rectangle import Rectangle
 
 
 class Square(Rectangle):
