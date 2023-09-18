@@ -26,12 +26,7 @@ class Square(Rectangle):
 
     @property
     def size(self):
-        """
-        Gets the size of the square.
-
-        Returns:
-            int: The size of the square's sides.
-        """
+        """Gets the size of the square."""
         return self.width
 
     @size.setter
@@ -41,10 +36,6 @@ class Square(Rectangle):
 
         Args:
             value (int): The new size value to set.
-
-        Raises:
-            TypeError: If the value is not an integer.
-            ValueError: If the value is not greater than 0.
         """
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
@@ -61,15 +52,6 @@ class Square(Rectangle):
         Args:
             *args: Positional arguments.
             **kwargs: Keyword arguments that can
-            include 'id', 'size', 'x', and 'y'.
-
-        Note:
-            If both positional and keyword arguments are provided,
-            keyword arguments take precedence.
-
-        Example:
-            square.update(1, size=4, x=2, y=3)
-            square.update(id=1, size=4, x=2, y=3)
         """
         if not args:
             for key, value in kwargs.items():
@@ -92,12 +74,7 @@ class Square(Rectangle):
                 self.y = args[3]
 
     def to_dictionary(self):
-        """
-        Returns a dictionary representation of the square's attributes.
-
-        Returns:
-            dict: A dictionary containing 'id', 'size', 'x', and 'y' keys.
-        """
+        """Returns a dictionary representation of the square's attributes."""
         return {
             'id': self.id,
             'size': self.size,
