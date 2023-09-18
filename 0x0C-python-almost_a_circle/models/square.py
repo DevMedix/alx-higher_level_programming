@@ -4,37 +4,7 @@ from rectangle import Rectangle
 
 
 class Square(Rectangle):
-    """
-    The Square class is a subclass of Rectangle and represents a square shape.
-
-    Attributes:
-        size (int): The size of the square's sides.
-        x (int): The X-coordinate of the square's top-left corner.
-        y (int): The Y-coordinate of the square's top-left corner.
-        id (int): An optional identifier for the square.
-
-    Methods:
-        __init__(self, size, x=0, y=0, id=None):
-            Initializes a new Square instance with the given size,
-            position, and optional identifier.
-
-        __str__(self):
-            Returns a string representation of the square in the format
-            "[Square] (id) x/y - size".
-
-        size (property):
-            Gets the size of the square.
-
-        size (setter):
-            Sets the size of the square, ensuring it's a positive integer.
-
-        update(self, *args, **kwargs):
-            Updates the square's attributes
-            using positional or keyword arguments.
-
-        to_dictionary(self):
-            Returns a dictionary representation of the square's attributes.
-    """
+    """Represent a square."""
 
     def __init__(self, size, x=0, y=0, id=None):
         """
