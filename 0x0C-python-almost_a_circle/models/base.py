@@ -1,8 +1,5 @@
 #!/usr/bin/python3
-"""This module has Base class only
-   If 'id' is not provided, it assigns a unique
-   identifier to the instance based on the number of objects
-"""
+"""This module has Base class only"""
 import json
 
 
