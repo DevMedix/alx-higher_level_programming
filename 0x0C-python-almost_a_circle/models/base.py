@@ -49,14 +49,14 @@ class Base:
             list_objs (list): A list of objects to be saved to the file.
 
         """
-        if list_objs is None:
-            list_objs = []
-        else:
-            filename = cls.__name__+".json"
-            json_string = cls.to_json_string([obj.to_dictionary()
-                                             for obj in list_objs])
 
-            with open(filename, mode="w", encoding="utf-8") as file:
+        filename = cls.__name__+".json"
+        with open(filename, mode="w", encoding="utf-8") as file:
+            if list_objs is None:
+                file.write("[]")
+            else:
+                json_string = cls.to_json_string([obj.to_dictionary()
+                                                 for obj in list_objs])
                 file.write(json_string)
 
     @staticmethod
