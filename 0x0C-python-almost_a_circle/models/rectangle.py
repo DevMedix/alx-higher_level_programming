@@ -160,7 +160,8 @@ class Rectangle(Base):
         :return: A string representation of the rectangle.
         :rtype: str
         """
-        result = f"[Rectangle] ({self.id}) {self.__x}/{self.__y} - {self.__width}/{self.__height}"
+        result = f"[Rectangle] ({self.id}) {self.__x}/{self.__y} - \
+                    {self.__width}/{self.__height}"
         return result
 
     def update(self, *args, **kwargs):
